@@ -1,0 +1,256 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #FFF7FB;
+    text-align: center;
+}
+.header {
+    width: 100%;
+    /* height: 600px; */
+    margin-bottom: 80px;
+    /* background-color: aqua; */
+}
+.heading {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 19px rgb(128, 128, 128);
+    padding: 0 5%;
+    opacity: 0.8;
+    position: fixed;
+}
+.header .heading .logo {
+    width: 10%;
+    height: 100px;
+    /* background-color: aqua; */
+}
+.heading > .logo > img {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+}
+.heading .menu {
+    width: 40%;
+    /* background-color: aqua; */
+    text-align: center;
+    margin-left: 400px;
+    padding-top: 16px;
+}
+.menu > ul {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    font-family: khmer os battambang;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu > ul > li {
+    width: 20%;
+    display: flex;
+    /* align-items: center; */
+    height: 50px;
+}
+.menu > ul > li > a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    &:hover {
+        color: pink;
+        text-decoration: underline;
+    }
+}
+.header .icon {
+    width: 20%;
+    height: 100px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.icon > a{
+    color: black;
+    font-size: 2.5rem;
+    &:active{
+        color: #f16bac;
+    }
+}
+.icon > i {
+    font-size: 2.5rem;
+    cursor: pointer;
+    &:active{
+        color: #f16bac;
+    }
+}
+
+.mid-page {
+    /* text-align: center; */
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: #FF9DCC; */
+    margin-top: 100px;
+}
+.head {
+    text-align: center;
+    /* width: 60%; */
+    /* height: 100px; */
+    background-color: #ff9dcc;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 20px;
+    padding-left: 40px;
+    border-radius: 15px;
+    padding-right: 40px;
+}
+.head > img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+.head > p {
+    font-size: 2.5rem;
+    color: white;
+    font-family: Khmer OS battambang;
+}
+.porduct-container {
+    width: 100%;
+    /* height: 100vh; */
+    /* background-color: blue; */
+    padding: 5% 10% 0px 10%;
+}
+.porduct-container .product {
+    width: 100%;
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-columns: repeat(4, 22.6%);
+    grid-template-rows: 600px 600px 600px;
+    gap: 50px;
+}
+.product > .item {
+    /* width: 25%; */
+    /* height: 200px; */
+    border: 2px pink solid;
+    background-color: rgb(255, 255, 255);
+}
+.product > .item > img {
+    width: 100%;
+    height: 75%;
+}
+.item > button {
+    border: none;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffc4e0;
+    font-family: Khmer OS battambang;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-left: 10%;
+}
+.item > button > span {
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.item > p {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+.item > .color {
+    color: #f16bac;
+}
+.footer {
+    background-image: url(../img/footter-page2.png);
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    /* z-index: -10; */
+}
+.footer-in {
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footter-in-in {
+    width: 100%;
+    height: 100%;
+    margin-top: 90px;
+}
+.footter-in-in > h2 {
+    font-family: Khmer OS battambang;
+    font-size: 2.5rem;
+}
+.footter-in-in > p {
+    font-size: 1.2rem;
+    font-family: Khmer OS battambang;
+}
+
+.footter-in-in > .input {
+    width: 70%;
+    /* height: 60px; */
+    border: rgb(250, 250, 250) 1px solid;
+    margin-left: 250px;
+    padding: 10px;
+    display: flex;
+    margin-top: 40px;
+}
+.footter-in-in > .input > input {
+    display: flex;
+    font-family: Khmer OS battambang;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    width: 550px;
+    background: none;
+    outline: none;
+    border: none;
+}
+.footter-in-in > .input > button {
+    align-items: center;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(95, 95, 95);
+    padding: 10px 30px 10px 30px;
+    font-size: 1.3rem;
+    margin-left: 600px;
+    font-family: Khmer OS battambang;
+    border: none;
+}
+.contact-footer {
+    width: 100%;
+    height: 300px;
+    /* background-color: aliceblue; */
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    text-align: center;
+}
+.header-con {
+    /* background-color: #a67b5b; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 40px;
+}
+.header-con > a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+}

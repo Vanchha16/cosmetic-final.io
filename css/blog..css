@@ -1,0 +1,243 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #FFF7FB;
+    text-align: center;
+}
+.header {
+    width: 100%;
+    /* height: 600px; */
+    margin-bottom: 80px;
+    /* background-color: aqua; */
+}
+.heading {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 19px rgb(128, 128, 128);
+    padding: 0 5%;
+    opacity: 0.8;
+    position: fixed;
+}
+.header .heading .logo {
+    width: 10%;
+    height: 100px;
+    opacity: 1;
+    /* background-color: aqua; */
+}
+.heading > .logo > img {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+}
+.heading .menu {
+    width: 40%;
+    /* background-color: aqua; */
+    text-align: center;
+    margin-left: 400px;
+    padding-top: 16px;
+}
+.menu > ul {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    font-family: khmer os battambang;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu > ul > li {
+    width: 20%;
+    display: flex;
+    /* align-items: center; */
+    height: 50px;
+}
+.menu > ul > li > a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    &:hover {
+        color: pink;
+        text-decoration: underline;
+    }
+}
+.header .icon {
+    width: 20%;
+    height: 100px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.mid-page {
+    /* text-align: center; */
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: #FF9DCC; */
+    margin-top: 100px;
+}
+.head {
+    text-align: center;
+    /* width: 60%; */
+    /* height: 100px; */
+    background-color: #ff9dcc;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 20px;
+    padding-left: 40px;
+    border-radius: 15px;
+    padding-right: 40px;
+}
+.head > img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+.head > p {
+    font-size: 2.5rem;
+    color: white;
+    font-family: Khmer OS battambang;
+}
+.icon > a{
+    color: black;
+    font-size: 2.5rem;
+    &:active{
+        color: #f16bac;
+    }
+}
+.icon > i {
+    font-size: 2.5rem;
+    cursor: pointer;
+    &:active{
+        color: #f16bac;
+    }
+}
+.blog-product {
+    width: 100%;
+    /* height: 100vh; */
+    /* background-color: #ff9dcc; */
+    padding: 0px 5% 0px 5%;
+}
+.blog-product .product-show {
+    width: 100%;
+    /* background-color: aliceblue; */
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    gap: 25px;
+    grid-template-rows: 800px auto auto;
+    justify-content: center;
+}
+.product-show .item-product {
+    width: 100%;
+    background-color: #ffebf6;
+    border: 1px pink solid;
+    padding: 5%;
+    /* padding-bottom: 0px; */
+}
+.product-show .item-product .img {
+    width: 100%;
+    height: 60%;
+    /* background-color: #ff9dcc; */
+}
+.blog-product .product-show .item-product img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.item-product > h1 {
+    font-family: Khmer OS battambang;
+    font-size: 1.6rem;
+    color: #ff9dcc;
+    padding: 10px 0px 0px 0px;
+}
+.item-product > .text-in {
+    font-family: Khmer OS battambang;
+    font-size: 1rem;
+    width: 100%;
+    /* background-color: #ff9dcc; */
+    text-align: justify;
+}
+.item-product > p {
+    font-family: Khmer OS battambang;
+    font-size: 1rem;
+    line-height: 2.5;
+}
+.item-product > .text-in-2 {
+    text-align: justify;
+    font-family: Khmer OS battambang;
+}
+.icon {
+    display: flex;
+    justify-content: start;
+}
+.icon > i {
+    font-size: 1.5rem;
+    margin-left: 8px;
+}
+.comment {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    padding: 20px 8% 0px 8%;
+    text-align: start;
+    flex-direction: column; 
+
+}
+.comment > p {
+    font-size: 2rem;
+    font-family: Khmer OS battambang;
+
+}
+.input {
+    display: flex;
+    gap: 20px;
+}
+.input .input-in {
+    width: 80%;
+    border: 1px solid black;
+    padding: 15px;
+}
+.input .input-in input {
+    font-size: 1.5rem;
+    font-family: Khmer OS battambang;
+    border: none;
+    outline: none;
+    background-color: #FFF7FB;
+    width: 100%;
+}
+.input button {
+    width: 20%;
+    background-color: black;
+    color: white;
+    font-family: Khmer OS battambang;
+    font-size: 1.8rem;
+}
+.contact-footer {
+    width: 100%;
+    height: 300px;
+    /* background-color: aliceblue; */
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    /* gap: 20px; */
+    text-align: center;
+}
+.header-con {
+    /* background-color: #a67b5b; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 40px;
+}
+.header-con > a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+}
