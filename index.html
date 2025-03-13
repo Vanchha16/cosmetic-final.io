@@ -23,19 +23,26 @@
                     <div class="menu">
                         <ul>
                             <li><a href="./index.html" style="color: rgb(248, 117, 193); text-decoration: underline;">ទំព័រដើម</a></li>
-                            <li><a href="./page/shop.html">ទិញ</a></li>
+                            <li><a href="./page/shop.html" id="#scroll">ទិញ</a></li>
                             <li><a href="./page/blog.html">BLOG</a></li>
                             <li><a href="./page/aboutus.html">អំពីយើង</a></li>
                             <li><a href="./page/contact.html">ទំនាក់ទំនង</a></li>
                         </ul>
                     </div>
                     <div class="icon">
-                                               <a href="./page/card.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <div class="cycle" id="cycle">
+                            <p style="text-align: center; margin-top: 5px; color: rgb(252, 252, 252); font-size: 20px;" id="add-number">0</p>
+                        </div>
+                        <a href="./page/card.html" id="showitem"><i class="fa-solid fa-cart-shopping"></i></a>
                     </div>
                 </div>
-                <div class="home-page">
-                    <img src="./img/Artboard 1 (1).jpg" alt="" />
+                <div class="home-page" >
+                    <img src="./img/home-text.png" alt="" />
+                    <button><a href="./page/shop.html" style="text-decoration: none;">ទិញឥឡូវនេះ</a></button>
                 </div>
+                 <div class="photo-container" id="photoContainer">
+
+                 </div>
             </div>
             <div class="mid-container">
                 <div class="team1">
@@ -107,6 +114,7 @@
                                     <i
                                         class="fa-solid fa-plus"
                                         style="font-size: 30px"
+                                        onclick="add('Discount Item' , 29.75 , '../img/12.jpg')"
                                     ></i>
                                     <p
                                         style="
@@ -121,7 +129,9 @@
                                         style="
                                             margin-left: 30px;
                                             font-size: 30px;
+                    
                                         "
+                                        onclick="changeIcon(this)"
                                     ></i>
                                 </div>
                             </div>
@@ -130,27 +140,54 @@
                 </div>
                 <div class="team3">
                     <div class="text-in">
-                        <p><a href="#">ផលិតផលថ្មី</a></p>
+                        <p><a href="#" id="scroll">ផលិតផលថ្មី</a></p>
                         <p><a href="#">កំពុងដាក់លក់</a></p>
+                        <div class="arrow">
+                            <i class="fa-solid fa-arrow-left" onclick="scrollL()"></i>
+                            <i class="fa-solid fa-arrow-right" onclick="scrollRight()"></i>
+                        </div>
                     </div>
                     <div class="item-display">
-                        <div class="item-4">
-                            <img src="./img/4.png" alt="" />
-                            <p>GG Original Serum</p>
-                        </div>
-                        <div class="item-4">
-                            <img src="./img/item2.png" alt="" />
-                            <p>Collagen Cleansing Balm</p>
-                        </div>
-                        <div class="item-4">
-                            <img src="./img/item4.jpg" alt="" />
-                            <p>EGF Glow Mask</p>
-                        </div>
-                        <div class="item-4">
-                            <img src="./img/item3.jpg" alt="" />
-                            <p>PHA Gentle Pad</p>
+                        <div class="scroll-img" id="scroll-container">
+                            <div class="item-4">
+                                <img src="./img/item-2.png" alt="" />
+                                <p>GG Original Serum</p>
+                                </div>
+                                <div class="item-4">
+                                    <img src="./img/item-3.png" alt="" />
+                                    <p>Collagen Cleansing Balm</p>
+                                </div>
+                                <div class="item-4">
+                                    <img src="./img/item-4.png" alt="" />
+                                    <p>EGF Glow Mask</p>
+                                </div>
+                                <div class="item-4">
+                                    <img src="./img/item-5.png" alt="" />
+                                    <p>PHA Gentle Pad</p>
+                                </div>
+                                <div class="item-4">
+                                <img src="./img/item-6.png" alt="" />
+                                <p>GG Original Serum</p>
+                                </div>
+                                <div class="item-4">
+                                    <img src="./img/item-7.png" alt="" />
+                                    <p>Collagen Cleansing Balm</p>
+                                </div>
+                                <div class="item-4">
+                                    <img src="./img/item-8.png" alt="" />
+                                    <p>EGF Glow Mask</p>
+                                </div>
+                                <div class="item-4">
+                                    <img src="./img/item-10.png" alt="" />
+                                    <p>PHA Gentle Pad</p>
+                                </div>
+                                <div class="item-4">
+                                    <img src="./img/item-11.png" alt="" />
+                                    <p>PHA Gentle Pad</p>
+                                </div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
             <div class="footer">
@@ -166,11 +203,11 @@
                             <input
                                 type="text"
                                 name=""
-                                id=""
+                                id="input"
                                 placeholder="បញ្ចូលអាស័យដ្ធានរបស់អ្នកនៅទីនេះ... "
                                 ​
                             />
-                            <button>ដាក់បញ្ចូន</button>
+                            <button onclick="delinput()">ដាក់បញ្ចូន</button>
                         </div>
                     </div>
                 </div>
@@ -178,25 +215,25 @@
             <div class="contact-footer">
                 <div class="header-con">
                     <h1>Comapany</h1>
-                    <a href="#">Contact</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Glow to Glow</a>
+                    <a href="./page/contact.html">Contact</a>
+                    <a href="./page/blog.html">Blog</a>
+                    <a href="./page/privacy.html">Privacy Policy</a>
+                    <a href="./page/growtogrow.html">Glow to Glow</a>
                 </div>
                 <div class="header-con">
                     <h1>Support</h1>
-                    <a href="#">Shopping & Returns</a>
-                    <a href="#">FAQs</a>
-                    <a href="#">Glow Points</a>
+                    <a href="./page/shop&return.html">Shopping & Returns</a>
+                    <a href="./page/glow&point.html">Glow Points</a>
                 </div>
                 <div class="header-con">
                     <h1>Social</h1>
-                    <a href="#">Facebook</a>
-                    <a href="#">Instagram</a>
-                    <a href="#">TikTok</a>
+                    <a href="https://www.facebook.com/somabeauti/">Facebook</a>
+                    <a href="https://www.instagram.com/somabeauti/">Instagram</a>
+                    <a href="https://www.tiktok.com/@besomabeauty?lang=km-KH">TikTok</a>
                 </div>
             </div>
         </div>
+        <!-- <script src="./java/card.js"></script> -->
         <script src="./java/java.js"></script>
     </body>
 </html>

@@ -9,6 +9,9 @@ body {
     /* background-color: antiquewhite; */
     text-align: center;
 }
+html{
+    scroll-behavior: smooth;
+}
 .header {
     width: 100%;
     margin-bottom: 50px;
@@ -223,12 +226,31 @@ body {
 }
 .text-in-before > button {
     background-color: white;
+    background: none;
     color: rgb(255, 158, 211);
     font-family: Khmer OS Koulen;
     border: none;
     font-size: 22px;
     padding: 10px 50px 10px 50px;
     border-radius: 40px;
+}
+.text-in-before > button > a{
+    background-color: white;
+    color: rgb(255, 158, 211);
+    font-family: Khmer OS Koulen;
+    border: none;
+    font-size: 22px;
+    padding: 10px 50px 10px 50px;
+    border-radius: 40px;
+    &:hover{
+        background-color: #ff9dcc;
+        border: 1px white solid;
+        color: white; 
+    }
+    &:active{
+        background-color: white;
+        color: #f16bac;
+    }
 }
 .contact-footer {
     width: 100%;
@@ -251,4 +273,15 @@ body {
     text-decoration: none;
     color: black;
     font-size: 1.4rem;
+}
+.cycle{
+    width: 30px ;
+    height: 30px;
+    background-color: #ff0000;
+    /* position: absolute; */
+    margin-right: -50px;
+    z-index: 2;
+    border-radius: 50px;
+    margin-top: -40px;
+    display: none;
 }

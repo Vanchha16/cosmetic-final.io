@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="../img/smaillogo.png" type="image/x-icon">
 </head>
 <body>
+    <script src="../java/aboutus.js"></script>
     <div class="container">
          <div class="header">
                 <div class="heading">
@@ -23,6 +24,9 @@
                         </ul>
                     </div>
                     <div class="icon">
+                          <div class="cycle" id="cycle">
+                                <p style="text-align: center; margin-top: 5px; color: rgb(252, 252, 252); font-size: 20px;" id="add-number">0</p>
+                            </div>
                         <a href="./card.html"><i class="fa-solid fa-cart-shopping"></i></a>
                     </div>
                 </div>
@@ -46,7 +50,7 @@
                     <i class="fa-regular fa-envelope"></i> <span>Info@somabeauty.com</span>
                 </div>
                 <div class="conta">
-                    <i class="fa-solid fa-location-dot"></i> <span>34 Street 360, Phnom Penh</span>
+                    <i class="fa-solid fa-location-dot"></i> <span><a href="https://www.google.com.kh/maps/place/Besoma/@11.5463677,104.9240799,15.75z/data=!4m6!3m5!1s0x310951317c5c216b:0x5b0c111e1bce9d2!8m2!3d11.5485415!4d104.9260882!16s%2Fg%2F11kc358ppp?entry=ttu&g_ep=EgoyMDI1MDMxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="color: black;">34 Street 360, Phnom Penh</a></span>
                 </div>
             </div>
             <div class="info" style="margin-left: -200px;">
@@ -57,9 +61,23 @@
                 <div class="div-input">
                      <input type="text" name="" id="" placeholder="អត្ថបទរបស់អ្នក....">
                 </div>
-                <button>ដាក់បញ្ជូន</button>
+                <button onclick="clearForm()">ដាក់បញ្ជូន</button>
             </div>
         </div>
+
+        
     </div>
+    <script>
+        function clearForm() {
+    // Select all input fields inside the form
+    const inputs = document.querySelectorAll('.info input');
+    
+    // Loop through each input field and clear its value
+    inputs.forEach(input => {
+        input.value = '';
+    });
+}
+        
+    </script>
 </body>
 </html>

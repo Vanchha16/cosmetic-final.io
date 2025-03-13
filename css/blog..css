@@ -67,13 +67,27 @@ body {
         text-decoration: underline;
     }
 }
-.header .icon {
+.header .icon-home-page {
     width: 20%;
     height: 100px;
     /* background-color: aqua; */
     display: flex;
     justify-content: end;
     align-items: center;
+}
+.icon-home-page > a{
+    color: black;
+    font-size: 2.5rem;
+    &:active{
+        color: #f16bac;
+    }
+}
+.icon-home-page > i {
+    font-size: 2.5rem;
+    cursor: pointer;
+    &:active{
+        color: #f16bac;
+    }
 }
 .mid-page {
     /* text-align: center; */
@@ -152,6 +166,13 @@ body {
     height: 100%;
     object-fit: cover;
 }
+a{
+    text-decoration: none;
+    color: #ff9dcc;
+    &:active{
+        color: white;
+    }
+}
 .item-product > h1 {
     font-family: Khmer OS battambang;
     font-size: 1.6rem;
@@ -177,10 +198,15 @@ body {
 .icon {
     display: flex;
     justify-content: start;
+    align-items: center;
 }
 .icon > i {
     font-size: 1.5rem;
     margin-left: 8px;
+}
+.icon a{
+    font-size: 1.5rem;
+    margin-left: 5px;
 }
 .comment {
     width: 100%;
@@ -219,6 +245,11 @@ body {
     color: white;
     font-family: Khmer OS battambang;
     font-size: 1.8rem;
+    cursor: pointer;
+    &:active{
+        background-color: white;
+        color: black;
+    }
 }
 .contact-footer {
     width: 100%;
@@ -240,4 +271,19 @@ body {
     text-decoration: none;
     color: black;
     font-size: 1.4rem;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.cycle{
+    width: 30px ;
+    height: 30px;
+    background-color: #ff0000;
+    /* position: absolute; */
+    margin-right: -50px;
+    z-index: 2;
+    border-radius: 50px;
+    margin-top: -40px;
+    display: none;
 }

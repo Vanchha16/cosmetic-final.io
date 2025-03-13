@@ -137,9 +137,16 @@ body {
     display: flex;
     align-items: center;
 } */
+
 .info > .conta > i{
     font-size: 2.3rem;
     margin: 10px;
+}
+.conta > span > a{
+    text-decoration: none;
+}
+.conta >  span > a:hover{
+    text-decoration: underline;
 }
 .conta > span{
     margin-left: 20px;
@@ -153,6 +160,7 @@ body {
     gap: 17px;
 }
 .info > input {
+    font-size: 1.1rem;
     padding: 9px;
     font-family: Khmer OS battambang;
     border-radius: 10px;
@@ -174,8 +182,10 @@ body {
     border: 1px gray solid;
 }
 .div-input > input{
+    font-size: 1.1rem;
     outline: none;
     border: none;
+    width: 100%;
     font-family: Khmer OS battambang;
     background: none;
 }
@@ -193,4 +203,21 @@ button{
         color: #ff9dcc;
         border: #ff9dcc 1px solid;
     }
+    &:active{
+        background-color: #f75fe2;
+        color: #ffffff;
+        border: #ffffff 1px solid;
+    }
+}
+
+.cycle{
+    width: 30px ;
+    height: 30px;
+    background-color: #ff0000;
+    /* position: absolute; */
+    margin-right: -50px;
+    z-index: 2;
+    border-radius: 50px;
+    margin-top: -40px;
+    display: none;
 }
